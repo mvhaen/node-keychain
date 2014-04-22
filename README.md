@@ -1,14 +1,18 @@
-#  Basic Keychain Access on Mac computers running Node.js 
+#  Basic Cross-Platorm Keychain Access for Node.js 
 
-  This module adds methods for basic Keychain access in Node.js by way of the `security` command-line tool. **This is in-development and is not feature complete.**
+  This module adds methods for basic Keychain access in Node.js **This is in-development and is not feature complete.**
+  
+  For MAC only support check out the xkeychain npm module (https://github.com/drudge/node-keychain).
 
 ## Requirements
 
  * Mac OS X 10.6+
+ * Windows XP or higher
+ * Ubuntu Linux (uses GNOME keyring).
 
 ## Installation
 
-    npm install keychain
+    npm install xkeychain
     
 ## Example
 
@@ -25,9 +29,11 @@ keychain.setPassword({ account: 'foo', service: 'FooBar', password: 'baz' }, fun
 
 ## Contributors
 
-The following are the major contributors of `node-keychain` (in no specific order).
+This module was originally implemented by Nicholas Penree ([drudge](http://github.com/drudge)) as node-keychain. This module focuses on 
 
-  * Nicholas Penree ([drudge](http://github.com/drudge))
+The following are the major contributors of `node-xkeychain` (in no specific order).
+
+  * Michael Vooorhaen ([mvhaen](http://github.com/mvhaen))
 
 ## License 
 
