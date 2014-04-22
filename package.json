@@ -1,8 +1,8 @@
 {
-  "name": "keychain",
+  "name": "xkeychain",
   "version": "0.0.3",
-  "description": "Basic access to the Mac OS X Keychain",
-  "main": "keychain.js",
+  "description": "Basic cross-platform Keychain access",
+  "main": "xkeychain.js",
   "devDependencies": {
     "mocha": "*",
     "should": "*"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:drudge/node-keychain.git"
+    "url": "git@github.com:mvhaen/node-xkeychain.git"
   },
   "keywords": [
     "osx",
@@ -20,6 +20,12 @@
     "password",
     "mac"
   ],
-  "author": "Nicholas Penree",
+  "author": "Michael Voorhaen",
+  "contributors": [
+      {
+        "name": "Michael Voorhaen",
+        "email": "michael.voorhaen@gmail.com"
+      } 
+    ],
   "license": "MIT"
 }
