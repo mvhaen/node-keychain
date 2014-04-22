@@ -29,7 +29,7 @@ keychain.setPassword({ account: 'foo', service: 'FooBar', password: 'baz' }, fun
 
 ## Contributors
 
-This module was originally implemented by Nicholas Penree ([drudge](http://github.com/drudge)) as node-keychain. This module focuses on 
+This module was originally implemented by Nicholas Penree ([drudge](http://github.com/drudge)) as node-keychain. This module focuses on OS X while this one focuses on supporting multiple OSes at once.
 
 The following are the major contributors of `node-xkeychain` (in no specific order).
 
