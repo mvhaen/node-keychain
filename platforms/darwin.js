@@ -75,7 +75,7 @@ KeychainAccess.prototype.getPassword = function(opts, fn) {
     password += d.toString();
   });
 
-  security.on('exit', function(code, signal) {
+  security.on('close', function(code, signal) {
     if (code !== 0) {
       err = new Error('Could not find password');
       fn(err, null);
