@@ -125,7 +125,7 @@ KeychainAccess.prototype.setPassword = function(opts, fn) {
   var security = spawn(this.executablePath, [ 'add-generic-password', '-a', opts.account, '-s', opts.service, '-w', opts.password ]);
   var self = this;
 
-  security.on('exit', function(code, signal) {
+  security.on('close', function(code, signal) {
     if (code !== 0) {
       var msg = 'Security returned a non-successful error code: ' + code;
 
@@ -177,7 +177,7 @@ KeychainAccess.prototype.deletePassword = function(opts, fn) {
 
   var security = spawn(this.executablePath, [ 'delete-generic-password', '-a', opts.account, '-s', opts.service ]);
 
-  security.on('exit', function(code, signal) {
+  security.on('close', function(code, signal) {
     if (code !== 0) {
       err = new Error('Could not find password');
       fn(err);
