@@ -1,6 +1,6 @@
 {
   "name": "xkeychain",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Basic cross-platform Keychain access",
   "main": "xkeychain.js",
   "devDependencies": {
@@ -25,7 +25,7 @@
       {
         "name": "Michael Voorhaen",
         "email": "michael.voorhaen@gmail.com"
-      } 
+      }
     ],
   "license": "MIT"
 }
